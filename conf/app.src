@@ -2,6 +2,6 @@ SOURCE_URL=https://account.vintagestory.at/files/stable/vs_server_1.8.2.tar.gz
 SOURCE_SUM=80fc23cba98b5a8b632e39580ba120c9fb4ad82241ee329105933acd7863c79c4e429b6be193b607bd182b17364d2230a4c9ec4da55fa2ab0eeca1f0560b0f2c
 SOURCE_SUM_PRG=sha512sum
 SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
+SOURCE_IN_SUBDIR=false
 SOURCE_EXTRACT=true
 SOURCE_FILENAME=vs_server.tar.gz
