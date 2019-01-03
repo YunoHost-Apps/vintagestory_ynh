@@ -47,7 +47,7 @@ app=$YNH_APP_INSTANCE_NAME
 
 ### If the app uses nginx as web server (written in HTML/PHP in most cases), the final path should be "/var/www/$app".
 ### If the app provides an internal web server (or uses another application server such as uwsgi), the final path should be "/opt/yunohost/$app"
-final_path=/opt/yunohost/$app
+final_path=/home/yunohost.app/$app
 test ! -e "$final_path" || ynh_die "This path already contains a folder"
 
 # Normalize the url path syntax
@@ -95,11 +95,12 @@ ynh_app_setting_set $app final_path $final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source "$final_path"
 
-#==============================================
-# INSTALL VINTAGE STORY
-#==============================================
+#=================================================
+# SETUP SYSTEMD
+#=================================================
 
-#dpkg --install  $final_path/emby-server-deb*
+ynh_add_systemd_config
+systemctl enable $app.service
 
 #=================================================
 # NGINX CONFIGURATION

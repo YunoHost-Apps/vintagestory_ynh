@@ -1,0 +1,16 @@
+[Unit]
+Description=vinstagestory
+After=network.target
+
+[Service]
+WorkingDirectory=/home/yunohost.app/vintagestory/
+User=vintagestory
+Group=users
+Type=simple
+UMask=000
+ExecStart=/usr/bin/mono VintagestoryServer.exe
+RestartSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
