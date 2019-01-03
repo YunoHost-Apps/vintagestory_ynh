@@ -5,14 +5,13 @@ set -eu
 
 # See comments in install script
 app=$YNH_APP_INSTANCE_NAME
-final_path=/opt/yunohost/$app
+final_path=/home/yunohost.app/$app
 
 # Source YunoHost helpers
 source /usr/share/yunohost/helpers
 
-# Set permissions to app files
-# you may need to make some file and/or directory writeable by www-data (nginx user)
-#sudo chown -R root: $src_path
+# Stop vintagestory service
+systemctl stop vintagestory
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -22,11 +21,9 @@ ynh_app_setting_set $app final_path $final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source "$final_path"
 
-#==============================================
-# INSTALL PLEX
-#==============================================
-
-dpkg --install $final_path/emby-server-deb*
+# Set permissions to app files
+# you may need to make some file and/or directory writeable by www-data (nginx user)
+sudo chown -R admin $final_path
 
 #=================================================
 # NGINX CONFIGURATION
@@ -52,6 +49,6 @@ dpkg --install $final_path/emby-server-deb*
 #  ynh_app_setting_set "$app" unprotected_uris "/"
 #fi
 
-# Reload nginx service
-systemctl restart plexmediaserver
+# Start vintagestory service
+systemctl start vintagestory
 
