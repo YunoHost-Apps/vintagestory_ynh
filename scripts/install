@@ -85,7 +85,7 @@ ynh_app_setting_set $app port $port
 # INSTALL DEPS
 #==============================================
 
-ynh_package_install screen wget curl mono-complete mono-utils
+ynh_package_install wget curl mono-complete mono-utils
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -146,8 +146,7 @@ ynh_system_user_create $app
 ### that really need such authorization.
 
 # Set permissions to app files
-#chown -R root: /etc/loolwsd
-
+chown -R $app $final_path
 
 #=================================================
 # SETUP SSOWAT

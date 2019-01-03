@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/yunohost.app/vintagestory/
-User=admin
+User=vinstagestory
 Group=users
 Type=simple
 UMask=000
