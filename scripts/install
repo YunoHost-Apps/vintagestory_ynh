@@ -117,7 +117,7 @@ ynh_add_nginx_config
 #=================================================
 
 # Create a system user
-ynh_system_user_create $app
+#ynh_system_user_create $app
 
 #=================================================
 # MODIFY A CONFIG FILE
@@ -149,7 +149,7 @@ ynh_system_user_create $app
 ### that really need such authorization.
 
 # Set permissions to app files
-chown -R $app $final_path
+chown -R admin $final_path
 
 #=================================================
 # SETUP SSOWAT
