@@ -85,7 +85,10 @@ ynh_app_setting_set $app port $port
 # INSTALL DEPS
 #==============================================
 
-ynh_package_install wget curl mono-complete mono-utils
+ynh_package_install wget curl mono-complete mono-utils php7.0-fpm
+
+systemctl enable php7.0-fpm
+systemctl start php7.0-fpm
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -122,9 +125,9 @@ ynh_add_nginx_config
 #=================================================
 # MODIFY A CONFIG FILE
 #=================================================
-#cp -a ../conf/onlyoffice-documentserver.conf /etc/onlyoffice/documentserver/nginx/onlyoffice-documentserver.conf
-#ynh_replace_string "__NEXTCLOUDDOMAIN__" "$nextcloud_domain" "/etc/loolwsd/loolwsd.xml"
-#ynh_replace_string "__PASSWORD__" "$password" "/etc/loolwsd/loolwsd.xml"
+
+cp -a ../conf/index.php /var/www/$path_url/index.php
+cp -a ../conf/xdownloader.php /var/www/$path_url/xdownloader.php
 
 #=================================================
 # STORE THE CONFIG FILE CHECKSUM
