@@ -125,7 +125,7 @@ ynh_add_nginx_config
 #=================================================
 # MODIFY A CONFIG FILE
 #=================================================
-
+mkdir -p /var/www$path_url/
 cp -a ../conf/index.php /var/www$path_url/index.php
 cp -a ../conf/xdownloader.php /var/www$path_url/xdownloader.php
 
