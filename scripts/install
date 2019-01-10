@@ -85,10 +85,7 @@ ynh_app_setting_set $app port $port
 # INSTALL DEPS
 #==============================================
 
-ynh_package_install wget curl mono-complete mono-utils php7.0-fpm
-
-systemctl enable php7.0-fpm
-systemctl start php7.0-fpm
+ynh_package_install wget curl mono-complete mono-utils
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -125,9 +122,7 @@ ynh_add_nginx_config
 #=================================================
 # MODIFY A CONFIG FILE
 #=================================================
-mkdir -p /var/www$path_url/
-cp -a ../conf/index.php /var/www$path_url/index.php
-cp -a ../conf/xdownloader.php /var/www$path_url/xdownloader.php
+#mkdir -p /var/www$path_url/
 
 #=================================================
 # STORE THE CONFIG FILE CHECKSUM

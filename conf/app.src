@@ -1,5 +1,5 @@
-SOURCE_URL=https://account.vintagestory.at/files/stable/vs_server_1.8.3.tar.gz
-SOURCE_SUM=10f816450a57aefa4da1e76368edf6efde96212e35280410ab6852bb14fb7d4103165d05eec7276e917e1a23bebfb721a23d05a5fd09de8fe03601352860eea3
+SOURCE_URL=https://github.com/YunoHost-Apps/vintagestory_ynh/releases/download/1.8.5/vs_server_1.8.5.tar.gz
+SOURCE_SUM=c6f0cb9be1d39e32f0486858c8af8dda4facd37b049c41d1128361c5094d8337e1f686a7fc345dd4e667006966cd701c45b32ad5b9ff1b9db43585ac68a07950
 SOURCE_SUM_PRG=sha512sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false
