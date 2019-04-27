@@ -85,7 +85,7 @@ ynh_app_setting_set $app port $port
 # INSTALL DEPS
 #==============================================
 
-ynh_install_app_dependencies wget curl mono-complete mono-utils
+ynh_install_app_dependencies mono-complete mono-utils
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
