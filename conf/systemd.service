@@ -9,7 +9,7 @@ Group=users
 Type=simple
 UMask=000
 ExecStart=/usr/bin/mono VintagestoryServer.exe --dataPath /home/yunohost.app/vintagestory/data
-RestartSec=15
+RestartSec=60
 Restart=always
 
 [Install]
