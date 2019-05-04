@@ -1,5 +1,5 @@
-SOURCE_URL=https://account.vintagestory.at/files/unstable/vs_server_1.9.0-rc.4.tar.gz
-SOURCE_SUM=e2b621cde1059bd598e1d4041084f8b97d1219bc9a5357196275e5e92fb82026756560b416446fd7e31521621d8e78dd3964b9c01f99b6ba95b37b5ca1c5ff4e
+SOURCE_URL=https://cdn.vintagestory.at/gamefiles/unstable/vs_server_1.9.0-rc.9.tar.gz
+SOURCE_SUM=6789b8f949ba6448e1f5d52c435668ed0501bc06122fe14455da9edb70f3d27ce6193551fbb6db68b24631bc87287c2e4054662ed23e878aae01a5374c7c21df
 SOURCE_SUM_PRG=sha512sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false
