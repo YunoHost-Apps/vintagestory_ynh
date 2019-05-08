@@ -1,5 +1,5 @@
-SOURCE_URL=https://cdn.vintagestory.at/gamefiles/unstable/vs_server_1.9.0-rc.9.tar.gz
-SOURCE_SUM=6789b8f949ba6448e1f5d52c435668ed0501bc06122fe14455da9edb70f3d27ce6193551fbb6db68b24631bc87287c2e4054662ed23e878aae01a5374c7c21df
+SOURCE_URL=https://github.com/YunoHost-Apps/vintagestory_ynh/releases/download/1.9.2/vs_server_1.9.2.tar.gz
+SOURCE_SUM=548137a806a639ae5c898010fb6654889ec560fbcaf90af775a1eff05401aec4dac3b24be4b77269470766a9755640a6e7ecacf36061e326fa970c904ec60b7a
 SOURCE_SUM_PRG=sha512sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false
