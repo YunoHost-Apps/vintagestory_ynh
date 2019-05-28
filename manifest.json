@@ -6,7 +6,7 @@
         "en": "Vintage Story package for YunoHost.",
         "fr": "Vintage Story pour YunoHost."
     },
-    "version": "1.9.2",
+    "version": "1.9.7",
     "url": "https://www.vintagestory.at/",
     "license": "non-free",
     "maintainer": {
