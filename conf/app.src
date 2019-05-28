@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/YunoHost-Apps/vintagestory_ynh/releases/download/1.9.2/vs_server_1.9.2.tar.gz
-SOURCE_SUM=548137a806a639ae5c898010fb6654889ec560fbcaf90af775a1eff05401aec4dac3b24be4b77269470766a9755640a6e7ecacf36061e326fa970c904ec60b7a
+SOURCE_URL=https://github.com/YunoHost-Apps/vintagestory_ynh/releases/download/1.9.7/vs_server_1.9.7.tar.gz
+SOURCE_SUM=bc0d922f87475b5c05e77aa871b6b03e3b082a1e134ae3a5d06b9d89a8c2f0eefeaf735923d2ee157c34692e4991af3e53715f03d21310894df82a70e983adfa
 SOURCE_SUM_PRG=sha512sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false
