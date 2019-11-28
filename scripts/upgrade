@@ -17,13 +17,13 @@ systemctl stop vintagestory
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
-ynh_app_setting_set $app final_path $final_path
+ynh_app_setting_set "$app" final_path "$final_path"
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source "$final_path"
 
 # Set permissions to app files
 # you may need to make some file and/or directory writeable by www-data (nginx user)
-sudo chown -R admin $final_path
+sudo chown -R admin "$final_path"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -51,4 +51,3 @@ sudo chown -R admin $final_path
 
 # Start vintagestory service
 systemctl start vintagestory
-
