@@ -1,6 +1,8 @@
 # Vintage Story app for YunoHost
 Vintage Story Server
 
+**Shipped version:** 1.11.1
+
 - [Yunohost project](https://yunohost.org)
 - [Vintage Story website](https://www.vintagestory.at/)
 
