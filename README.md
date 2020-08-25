@@ -15,9 +15,9 @@ Vintage Story Server
 
  App can be installed by YunoHost **admin web-interface** or by **running following command**:
 
-        $ sudo yunohost app install https://github.com/YunoHost-Apps/vintagestory_ynh
+        $ sudo yunohost app install --debug https://github.com/YunoHost-Apps/vintagestory_ynh
  
 ### Upgrade this package:
 
-        $ sudo yunohost app upgrade vintagestory -u https://github.com/YunoHost-Apps/vintagestory_ynh
+        $ sudo yunohost app upgrade --debug vintagestory -u https://github.com/YunoHost-Apps/vintagestory_ynh
 
